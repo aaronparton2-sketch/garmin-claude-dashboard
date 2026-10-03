@@ -95,7 +95,8 @@ export default function Nav({ route, go, source }: { route: string; go: (p: stri
             <span className={`h-1.5 w-1.5 rounded-full ${source === "supabase" ? "bg-emerald-400" : source === "sample" ? "bg-amber-400" : "bg-slate-400"}`} />
             {source === "supabase" ? "live · supabase" : source === "sample" ? "sample data · demo" : "snapshot"}
           </span>
-          {source === "sample" && <WorkWithUs compact className="mt-2.5" />}
+          {/* Hidden on short laptop screens so the Plan links stay visible; the footer CTA still shows there. */}
+          {source === "sample" && <WorkWithUs compact className="mt-2.5 hidden [@media(min-height:860px)]:block" />}
         </div>
       </aside>
 
