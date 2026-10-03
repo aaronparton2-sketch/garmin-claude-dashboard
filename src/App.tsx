@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { lastRefreshed, loadData, login, type Bundle, type LoadResult } from "./lib/data";
 import { datasetNow, ALL_BUCKETS, type Bucket, type PeriodKey } from "./lib/metrics";
-import Nav from "./components/Nav";
+import Nav, { WorkWithUs } from "./components/Nav";
 import ChatWidget from "./components/ChatWidget";
 import Overview from "./pages/Overview";
 import Health from "./pages/Health";
@@ -57,6 +57,11 @@ function Shell({ data }: { data: Bundle }) {
         <div className="mx-auto max-w-6xl px-4 py-6 md:px-8 md:py-8">
           <Page route={route} data={data} now={now} go={go} period={period} setPeriod={setPeriod} refreshed={refreshed} />
           <footer className="mt-12 text-center text-xs text-slate-700">
+            {data.source === "sample" && (
+              <div className="mx-auto mb-5 max-w-xs">
+                <WorkWithUs className="text-left" />
+              </div>
+            )}
             {data.source === "sample" ? "Sample data (fictional athlete)" : "Garmin Connect"} · {data.activities.length} activities · {data.weighIns.length} weigh-ins · {data.sleep.length} nights
             <br />
             Built by <a className="text-slate-500 hover:text-slate-300" href="https://aaronautomates.com.au" target="_blank" rel="noreferrer">Aaron Automates</a> · <a className="text-slate-500 hover:text-slate-300" href="https://github.com/aaronparton2-sketch/garmin-claude-dashboard" target="_blank" rel="noreferrer">source on GitHub</a>

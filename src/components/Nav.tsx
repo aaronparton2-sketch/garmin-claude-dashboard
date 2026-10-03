@@ -27,6 +27,24 @@ export const NAV_SECTIONS: { heading?: string; items: NavItem[] }[] = [
   ] },
 ];
 
+/** Demo-only call to action. Rendered when source === "sample", so a copy you
+ *  deploy on your own data carries no agency link by default. */
+export function WorkWithUs({ className = "" }: { className?: string }) {
+  return (
+    <a
+      href="https://myceliumai.com.au"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`group block rounded-xl border border-emerald-500/25 bg-emerald-500/[0.07] px-3 py-2.5 transition hover:border-emerald-400/50 hover:bg-emerald-500/[0.12] ${className}`}
+    >
+      <div className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400/80">Want one built for you?</div>
+      <div className="mt-0.5 text-[12px] font-medium text-emerald-200">
+        Work with us <span className="inline-block transition group-hover:translate-x-0.5">→</span>
+      </div>
+    </a>
+  );
+}
+
 function isActive(current: string, path: string) {
   if (path === "/") return current === "/" || current === "/overview";
   return current === path;
@@ -71,9 +89,12 @@ export default function Nav({ route, go, source }: { route: string; go: (p: stri
             {source === "supabase" ? "live · supabase" : source === "sample" ? "sample data · demo" : "snapshot"}
           </span>
           {source === "sample" && (
-            <p className="mt-2 text-[10px] leading-snug text-slate-600">
-              Fictional athlete. Connect your own Garmin data via the README.
-            </p>
+            <>
+              <p className="mt-2 text-[10px] leading-snug text-slate-600">
+                Fictional athlete. Connect your own Garmin data via the README.
+              </p>
+              <WorkWithUs className="mt-3" />
+            </>
           )}
         </div>
       </aside>

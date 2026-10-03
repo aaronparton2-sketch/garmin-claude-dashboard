@@ -31,7 +31,7 @@ SIZES = {"desktop": (1440, 900), "mobile": (390, 844)}
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--base", default="https://garmin-claude-dashboard.vercel.app")
+    ap.add_argument("--base", default="https://dashboard.aaronautomates.com.au")
     ap.add_argument("--out", default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs", "screenshots"))
     ap.add_argument("--full", action="store_true", help="full-page captures (default: viewport only)")
     a = ap.parse_args()

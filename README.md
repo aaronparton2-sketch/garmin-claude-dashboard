@@ -7,9 +7,9 @@ a 16-week race plan, and a Claude coach that reads it all and answers like a coa
 This repo is a **working copy with sample data** so you can click around before you connect
 anything, then point it at your own Garmin data in one config step.
 
-**Live demo (sample data, fictional athlete):** https://garmin-claude-dashboard.vercel.app
+**Live demo (sample data, fictional athlete):** https://dashboard.aaronautomates.com.au
 
-[![Overview](docs/screenshots/overview-desktop.png)](https://garmin-claude-dashboard.vercel.app)
+[![Overview](docs/screenshots/overview-desktop.png)](https://dashboard.aaronautomates.com.au)
 
 > Built by [Aaron Automates](https://aaronautomates.com.au). Data pull lives in its own repo:
 > [garmin-claude-coach](https://github.com/aaronparton2-sketch/garmin-claude-coach).
@@ -146,7 +146,7 @@ vercel login
 vercel deploy --prod
 ```
 
-Either way you get a URL running the sample data. Then connect your own data (next section) and
+Either way you get your own URL running the sample data. Then connect your own data (next section) and
 redeploy. Netlify, Cloudflare Pages or any host that runs Node functions in `api/` works too.
 
 ---
