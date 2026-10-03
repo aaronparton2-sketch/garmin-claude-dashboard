@@ -1,0 +1,72 @@
+[
+ {
+  "scan_date": "2025-11-16",
+  "provider": "Sample DEXA clinic",
+  "weight_kg": 76.9,
+  "body_fat_pct": 17.9,
+  "fat_mass_kg": 13.77,
+  "lean_mass_kg": 60.1,
+  "fat_free_mass_kg": 63.15,
+  "bone_mineral_content_kg": 3.05,
+  "bmi": 24.3,
+  "asm_kg": 26.4,
+  "asm_height2": 8.33,
+  "bmd_total": 1.192,
+  "t_score": -0.3,
+  "z_score": -0.4,
+  "vat_area_cm2": 52,
+  "vat_mass_g": 213,
+  "sat_mass_g": 598,
+  "ag_ratio": 0.92,
+  "regional": {
+   "arms": {
+    "lean_g": 6912,
+    "fat_g": 1377
+   },
+   "legs": {
+    "lean_g": 21336,
+    "fat_g": 4544
+   },
+   "trunk": {
+    "lean_g": 28247,
+    "fat_g": 6885
+   }
+  },
+  "notes": "Sample scan. Fictional values for the demo."
+ },
+ {
+  "scan_date": "2026-05-20",
+  "provider": "Sample DEXA clinic",
+  "weight_kg": 75.1,
+  "body_fat_pct": 15.2,
+  "fat_mass_kg": 11.42,
+  "lean_mass_kg": 60.6,
+  "fat_free_mass_kg": 63.65,
+  "bone_mineral_content_kg": 3.05,
+  "bmi": 23.7,
+  "asm_kg": 26.9,
+  "asm_height2": 8.49,
+  "bmd_total": 1.192,
+  "t_score": -0.3,
+  "z_score": -0.3,
+  "vat_area_cm2": 44,
+  "vat_mass_g": 180,
+  "sat_mass_g": 506,
+  "ag_ratio": 0.92,
+  "regional": {
+   "arms": {
+    "lean_g": 6969,
+    "fat_g": 1142
+   },
+   "legs": {
+    "lean_g": 21513,
+    "fat_g": 3769
+   },
+   "trunk": {
+    "lean_g": 28482,
+    "fat_g": 5710
+   }
+  },
+  "notes": "Sample scan. Fictional values for the demo."
+ }
+]

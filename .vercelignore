@@ -1,0 +1,15 @@
+.vercel
+# Local secrets never upload. If .env were uploaded, Vite would inline any
+# VITE_SUPABASE_* values into the public bundle. On Vercel the app talks to
+# Supabase only through /api/* with server-side env vars.
+.env
+.env.*
+
+# Not needed in the deployment
+etl/
+sql/
+docs/
+scripts/
+*.md
+# Your own parsed exports (data/sample/ is what the demo serves and stays in)
+data/*.json

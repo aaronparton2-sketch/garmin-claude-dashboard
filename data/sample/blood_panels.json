@@ -1,0 +1,1100 @@
+[
+ {
+  "panel_date": "2025-11-11",
+  "lab": "Sample Pathology",
+  "lab_id": null,
+  "referrer": null,
+  "clinical_notes": "Routine review. Endurance training.",
+  "fasting": true,
+  "markers": [
+   {
+    "key": "iron",
+    "group": "Iron studies",
+    "name": "Iron",
+    "value": 14,
+    "unit": "umol/L",
+    "range": {
+     "type": "between",
+     "low": 10,
+     "high": 30
+    },
+    "flag": null
+   },
+   {
+    "key": "transferrin",
+    "group": "Iron studies",
+    "name": "Transferrin",
+    "value": 2.9,
+    "unit": "g/L",
+    "range": {
+     "type": "between",
+     "low": 2.0,
+     "high": 3.6
+    },
+    "flag": null
+   },
+   {
+    "key": "transferrin_sat",
+    "group": "Iron studies",
+    "name": "Transferrin saturation",
+    "value": 19,
+    "unit": "%",
+    "range": {
+     "type": "between",
+     "low": 15,
+     "high": 45
+    },
+    "flag": null
+   },
+   {
+    "key": "ferritin",
+    "group": "Iron studies",
+    "name": "Ferritin",
+    "value": 26,
+    "unit": "ug/L",
+    "range": {
+     "type": "between",
+     "low": 30,
+     "high": 300
+    },
+    "flag": "L"
+   },
+   {
+    "key": "folate",
+    "group": "Vitamins",
+    "name": "Folate",
+    "value": 24,
+    "unit": "nmol/L",
+    "range": {
+     "type": "above",
+     "low": 7
+    },
+    "flag": null
+   },
+   {
+    "key": "vitamin_d",
+    "group": "Vitamins",
+    "name": "Vitamin D",
+    "value": 61,
+    "unit": "nmol/L",
+    "range": {
+     "type": "above",
+     "low": 50
+    },
+    "flag": null
+   },
+   {
+    "key": "b12",
+    "group": "Vitamins",
+    "name": "Vitamin B12",
+    "value": 310,
+    "unit": "pmol/L",
+    "range": {
+     "type": "between",
+     "low": 150,
+     "high": 700
+    },
+    "flag": null
+   },
+   {
+    "key": "crp",
+    "group": "Inflammation",
+    "name": "CRP",
+    "value": 1,
+    "unit": "mg/L",
+    "range": {
+     "type": "below",
+     "high": 5
+    },
+    "flag": null,
+    "op": "<"
+   },
+   {
+    "key": "ck",
+    "group": "Muscle",
+    "name": "CK",
+    "value": 312,
+    "unit": "U/L",
+    "range": {
+     "type": "between",
+     "low": 45,
+     "high": 250
+    },
+    "flag": "H"
+   },
+   {
+    "key": "urea",
+    "group": "Kidneys & electrolytes",
+    "name": "Urea",
+    "value": 6.1,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 3.0,
+     "high": 8.0
+    },
+    "flag": null
+   },
+   {
+    "key": "creatinine",
+    "group": "Kidneys & electrolytes",
+    "name": "Creatinine",
+    "value": 88,
+    "unit": "umol/L",
+    "range": {
+     "type": "between",
+     "low": 60,
+     "high": 110
+    },
+    "flag": null
+   },
+   {
+    "key": "egfr",
+    "group": "Kidneys & electrolytes",
+    "name": "eGFR",
+    "value": 90,
+    "unit": "mL/min/1.73m2",
+    "range": {
+     "type": "above",
+     "low": 90
+    },
+    "flag": null,
+    "op": ">"
+   },
+   {
+    "key": "sodium",
+    "group": "Kidneys & electrolytes",
+    "name": "Sodium",
+    "value": 140,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 135,
+     "high": 145
+    },
+    "flag": null
+   },
+   {
+    "key": "potassium",
+    "group": "Kidneys & electrolytes",
+    "name": "Potassium",
+    "value": 4.3,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 3.5,
+     "high": 5.2
+    },
+    "flag": null
+   },
+   {
+    "key": "chloride",
+    "group": "Kidneys & electrolytes",
+    "name": "Chloride",
+    "value": 103,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 95,
+     "high": 110
+    },
+    "flag": null
+   },
+   {
+    "key": "bicarbonate",
+    "group": "Kidneys & electrolytes",
+    "name": "Bicarbonate",
+    "value": 26,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 22,
+     "high": 32
+    },
+    "flag": null
+   },
+   {
+    "key": "magnesium",
+    "group": "Bone & minerals",
+    "name": "Magnesium",
+    "value": 0.84,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 0.7,
+     "high": 1.1
+    },
+    "flag": null
+   },
+   {
+    "key": "corrected_calcium",
+    "group": "Bone & minerals",
+    "name": "Corrected calcium",
+    "value": 2.34,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 2.1,
+     "high": 2.6
+    },
+    "flag": null
+   },
+   {
+    "key": "phosphate",
+    "group": "Bone & minerals",
+    "name": "Phosphate",
+    "value": 1.12,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 0.75,
+     "high": 1.5
+    },
+    "flag": null
+   },
+   {
+    "key": "ast",
+    "group": "Liver",
+    "name": "AST",
+    "value": 38,
+    "unit": "U/L",
+    "range": {
+     "type": "below",
+     "high": 40
+    },
+    "flag": null
+   },
+   {
+    "key": "alt",
+    "group": "Liver",
+    "name": "ALT",
+    "value": 27,
+    "unit": "U/L",
+    "range": {
+     "type": "below",
+     "high": 40
+    },
+    "flag": null
+   },
+   {
+    "key": "alp",
+    "group": "Liver",
+    "name": "ALP",
+    "value": 68,
+    "unit": "U/L",
+    "range": {
+     "type": "between",
+     "low": 30,
+     "high": 110
+    },
+    "flag": null
+   },
+   {
+    "key": "ggt",
+    "group": "Liver",
+    "name": "GGT",
+    "value": 19,
+    "unit": "U/L",
+    "range": {
+     "type": "below",
+     "high": 60
+    },
+    "flag": null
+   },
+   {
+    "key": "bilirubin",
+    "group": "Liver",
+    "name": "Bilirubin",
+    "value": 12,
+    "unit": "umol/L",
+    "range": {
+     "type": "below",
+     "high": 20
+    },
+    "flag": null
+   },
+   {
+    "key": "albumin",
+    "group": "Liver",
+    "name": "Albumin",
+    "value": 44,
+    "unit": "g/L",
+    "range": {
+     "type": "between",
+     "low": 35,
+     "high": 50
+    },
+    "flag": null
+   },
+   {
+    "key": "tsh",
+    "group": "Thyroid",
+    "name": "TSH",
+    "value": 1.9,
+    "unit": "mIU/L",
+    "range": {
+     "type": "between",
+     "low": 0.4,
+     "high": 4.0
+    },
+    "flag": null
+   },
+   {
+    "key": "cholesterol",
+    "group": "Lipids",
+    "name": "Total cholesterol",
+    "value": 4.6,
+    "unit": "mmol/L",
+    "range": {
+     "type": "below",
+     "high": 5.5
+    },
+    "flag": null
+   },
+   {
+    "key": "triglycerides",
+    "group": "Lipids",
+    "name": "Triglycerides",
+    "value": 0.9,
+    "unit": "mmol/L",
+    "range": {
+     "type": "below",
+     "high": 2.0
+    },
+    "flag": null
+   },
+   {
+    "key": "hdl",
+    "group": "Lipids",
+    "name": "HDL",
+    "value": 1.5,
+    "unit": "mmol/L",
+    "range": {
+     "type": "above",
+     "low": 1.0
+    },
+    "flag": null
+   },
+   {
+    "key": "ldl",
+    "group": "Lipids",
+    "name": "LDL",
+    "value": 2.7,
+    "unit": "mmol/L",
+    "range": {
+     "type": "below",
+     "high": 3.5
+    },
+    "flag": null
+   },
+   {
+    "key": "chol_hdl_ratio",
+    "group": "Lipids",
+    "name": "Chol / HDL ratio",
+    "value": 3.1,
+    "unit": "",
+    "range": {
+     "type": "below",
+     "high": 4.5
+    },
+    "flag": null
+   },
+   {
+    "key": "glucose",
+    "group": "Metabolic",
+    "name": "Glucose (fasting)",
+    "value": 5.0,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 3.6,
+     "high": 6.0
+    },
+    "flag": null
+   },
+   {
+    "key": "hba1c_pct",
+    "group": "Metabolic",
+    "name": "HbA1c",
+    "value": 5.2,
+    "unit": "%",
+    "range": {
+     "type": "below",
+     "high": 6.0
+    },
+    "flag": null
+   },
+   {
+    "key": "uric_acid",
+    "group": "Metabolic",
+    "name": "Uric acid",
+    "value": 0.33,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 0.2,
+     "high": 0.45
+    },
+    "flag": null
+   },
+   {
+    "key": "haemoglobin",
+    "group": "Blood count",
+    "name": "Haemoglobin",
+    "value": 146,
+    "unit": "g/L",
+    "range": {
+     "type": "between",
+     "low": 130,
+     "high": 180
+    },
+    "flag": null
+   },
+   {
+    "key": "haematocrit",
+    "group": "Blood count",
+    "name": "Haematocrit",
+    "value": 0.43,
+    "unit": "L/L",
+    "range": {
+     "type": "between",
+     "low": 0.4,
+     "high": 0.54
+    },
+    "flag": null
+   },
+   {
+    "key": "mcv",
+    "group": "Blood count",
+    "name": "MCV",
+    "value": 88,
+    "unit": "fL",
+    "range": {
+     "type": "between",
+     "low": 80,
+     "high": 100
+    },
+    "flag": null
+   },
+   {
+    "key": "rdw",
+    "group": "Blood count",
+    "name": "RDW",
+    "value": 13.1,
+    "unit": "%",
+    "range": {
+     "type": "between",
+     "low": 11.5,
+     "high": 14.5
+    },
+    "flag": null
+   },
+   {
+    "key": "wcc",
+    "group": "Blood count",
+    "name": "White cell count",
+    "value": 5.4,
+    "unit": "x10^9/L",
+    "range": {
+     "type": "between",
+     "low": 4.0,
+     "high": 11.0
+    },
+    "flag": null
+   },
+   {
+    "key": "neutrophils",
+    "group": "Blood count",
+    "name": "Neutrophils",
+    "value": 2.9,
+    "unit": "x10^9/L",
+    "range": {
+     "type": "between",
+     "low": 2.0,
+     "high": 7.5
+    },
+    "flag": null
+   },
+   {
+    "key": "lymphocytes",
+    "group": "Blood count",
+    "name": "Lymphocytes",
+    "value": 1.8,
+    "unit": "x10^9/L",
+    "range": {
+     "type": "between",
+     "low": 1.0,
+     "high": 4.0
+    },
+    "flag": null
+   },
+   {
+    "key": "platelets",
+    "group": "Blood count",
+    "name": "Platelets",
+    "value": 228,
+    "unit": "x10^9/L",
+    "range": {
+     "type": "between",
+     "low": 150,
+     "high": 400
+    },
+    "flag": null
+   }
+  ],
+  "lab_comments": [
+   "SAMPLE DATA. These results are fictional and exist only to demonstrate the dashboard.",
+   "Reference intervals shown are illustrative and vary between laboratories."
+  ],
+  "created_at": "2025-11-12T05:40:00+00:00"
+ },
+ {
+  "panel_date": "2026-05-15",
+  "lab": "Sample Pathology",
+  "lab_id": null,
+  "referrer": null,
+  "clinical_notes": "Routine review. Endurance training.",
+  "fasting": true,
+  "markers": [
+   {
+    "key": "iron",
+    "group": "Iron studies",
+    "name": "Iron",
+    "value": 19,
+    "unit": "umol/L",
+    "range": {
+     "type": "between",
+     "low": 10,
+     "high": 30
+    },
+    "flag": null
+   },
+   {
+    "key": "transferrin",
+    "group": "Iron studies",
+    "name": "Transferrin",
+    "value": 2.7,
+    "unit": "g/L",
+    "range": {
+     "type": "between",
+     "low": 2.0,
+     "high": 3.6
+    },
+    "flag": null
+   },
+   {
+    "key": "transferrin_sat",
+    "group": "Iron studies",
+    "name": "Transferrin saturation",
+    "value": 27,
+    "unit": "%",
+    "range": {
+     "type": "between",
+     "low": 15,
+     "high": 45
+    },
+    "flag": null
+   },
+   {
+    "key": "ferritin",
+    "group": "Iron studies",
+    "name": "Ferritin",
+    "value": 58,
+    "unit": "ug/L",
+    "range": {
+     "type": "between",
+     "low": 30,
+     "high": 300
+    },
+    "flag": null
+   },
+   {
+    "key": "folate",
+    "group": "Vitamins",
+    "name": "Folate",
+    "value": 27,
+    "unit": "nmol/L",
+    "range": {
+     "type": "above",
+     "low": 7
+    },
+    "flag": null
+   },
+   {
+    "key": "vitamin_d",
+    "group": "Vitamins",
+    "name": "Vitamin D",
+    "value": 84,
+    "unit": "nmol/L",
+    "range": {
+     "type": "above",
+     "low": 50
+    },
+    "flag": null
+   },
+   {
+    "key": "b12",
+    "group": "Vitamins",
+    "name": "Vitamin B12",
+    "value": 345,
+    "unit": "pmol/L",
+    "range": {
+     "type": "between",
+     "low": 150,
+     "high": 700
+    },
+    "flag": null
+   },
+   {
+    "key": "crp",
+    "group": "Inflammation",
+    "name": "CRP",
+    "value": 1,
+    "unit": "mg/L",
+    "range": {
+     "type": "below",
+     "high": 5
+    },
+    "flag": null,
+    "op": "<"
+   },
+   {
+    "key": "ck",
+    "group": "Muscle",
+    "name": "CK",
+    "value": 176,
+    "unit": "U/L",
+    "range": {
+     "type": "between",
+     "low": 45,
+     "high": 250
+    },
+    "flag": null
+   },
+   {
+    "key": "urea",
+    "group": "Kidneys & electrolytes",
+    "name": "Urea",
+    "value": 5.6,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 3.0,
+     "high": 8.0
+    },
+    "flag": null
+   },
+   {
+    "key": "creatinine",
+    "group": "Kidneys & electrolytes",
+    "name": "Creatinine",
+    "value": 86,
+    "unit": "umol/L",
+    "range": {
+     "type": "between",
+     "low": 60,
+     "high": 110
+    },
+    "flag": null
+   },
+   {
+    "key": "egfr",
+    "group": "Kidneys & electrolytes",
+    "name": "eGFR",
+    "value": 90,
+    "unit": "mL/min/1.73m2",
+    "range": {
+     "type": "above",
+     "low": 90
+    },
+    "flag": null,
+    "op": ">"
+   },
+   {
+    "key": "sodium",
+    "group": "Kidneys & electrolytes",
+    "name": "Sodium",
+    "value": 141,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 135,
+     "high": 145
+    },
+    "flag": null
+   },
+   {
+    "key": "potassium",
+    "group": "Kidneys & electrolytes",
+    "name": "Potassium",
+    "value": 4.4,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 3.5,
+     "high": 5.2
+    },
+    "flag": null
+   },
+   {
+    "key": "chloride",
+    "group": "Kidneys & electrolytes",
+    "name": "Chloride",
+    "value": 104,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 95,
+     "high": 110
+    },
+    "flag": null
+   },
+   {
+    "key": "bicarbonate",
+    "group": "Kidneys & electrolytes",
+    "name": "Bicarbonate",
+    "value": 27,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 22,
+     "high": 32
+    },
+    "flag": null
+   },
+   {
+    "key": "magnesium",
+    "group": "Bone & minerals",
+    "name": "Magnesium",
+    "value": 0.86,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 0.7,
+     "high": 1.1
+    },
+    "flag": null
+   },
+   {
+    "key": "corrected_calcium",
+    "group": "Bone & minerals",
+    "name": "Corrected calcium",
+    "value": 2.36,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 2.1,
+     "high": 2.6
+    },
+    "flag": null
+   },
+   {
+    "key": "phosphate",
+    "group": "Bone & minerals",
+    "name": "Phosphate",
+    "value": 1.08,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 0.75,
+     "high": 1.5
+    },
+    "flag": null
+   },
+   {
+    "key": "ast",
+    "group": "Liver",
+    "name": "AST",
+    "value": 29,
+    "unit": "U/L",
+    "range": {
+     "type": "below",
+     "high": 40
+    },
+    "flag": null
+   },
+   {
+    "key": "alt",
+    "group": "Liver",
+    "name": "ALT",
+    "value": 24,
+    "unit": "U/L",
+    "range": {
+     "type": "below",
+     "high": 40
+    },
+    "flag": null
+   },
+   {
+    "key": "alp",
+    "group": "Liver",
+    "name": "ALP",
+    "value": 64,
+    "unit": "U/L",
+    "range": {
+     "type": "between",
+     "low": 30,
+     "high": 110
+    },
+    "flag": null
+   },
+   {
+    "key": "ggt",
+    "group": "Liver",
+    "name": "GGT",
+    "value": 17,
+    "unit": "U/L",
+    "range": {
+     "type": "below",
+     "high": 60
+    },
+    "flag": null
+   },
+   {
+    "key": "bilirubin",
+    "group": "Liver",
+    "name": "Bilirubin",
+    "value": 11,
+    "unit": "umol/L",
+    "range": {
+     "type": "below",
+     "high": 20
+    },
+    "flag": null
+   },
+   {
+    "key": "albumin",
+    "group": "Liver",
+    "name": "Albumin",
+    "value": 43,
+    "unit": "g/L",
+    "range": {
+     "type": "between",
+     "low": 35,
+     "high": 50
+    },
+    "flag": null
+   },
+   {
+    "key": "tsh",
+    "group": "Thyroid",
+    "name": "TSH",
+    "value": 2.1,
+    "unit": "mIU/L",
+    "range": {
+     "type": "between",
+     "low": 0.4,
+     "high": 4.0
+    },
+    "flag": null
+   },
+   {
+    "key": "cholesterol",
+    "group": "Lipids",
+    "name": "Total cholesterol",
+    "value": 4.3,
+    "unit": "mmol/L",
+    "range": {
+     "type": "below",
+     "high": 5.5
+    },
+    "flag": null
+   },
+   {
+    "key": "triglycerides",
+    "group": "Lipids",
+    "name": "Triglycerides",
+    "value": 0.8,
+    "unit": "mmol/L",
+    "range": {
+     "type": "below",
+     "high": 2.0
+    },
+    "flag": null
+   },
+   {
+    "key": "hdl",
+    "group": "Lipids",
+    "name": "HDL",
+    "value": 1.6,
+    "unit": "mmol/L",
+    "range": {
+     "type": "above",
+     "low": 1.0
+    },
+    "flag": null
+   },
+   {
+    "key": "ldl",
+    "group": "Lipids",
+    "name": "LDL",
+    "value": 2.4,
+    "unit": "mmol/L",
+    "range": {
+     "type": "below",
+     "high": 3.5
+    },
+    "flag": null
+   },
+   {
+    "key": "chol_hdl_ratio",
+    "group": "Lipids",
+    "name": "Chol / HDL ratio",
+    "value": 2.7,
+    "unit": "",
+    "range": {
+     "type": "below",
+     "high": 4.5
+    },
+    "flag": null
+   },
+   {
+    "key": "glucose",
+    "group": "Metabolic",
+    "name": "Glucose (fasting)",
+    "value": 4.9,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 3.6,
+     "high": 6.0
+    },
+    "flag": null
+   },
+   {
+    "key": "hba1c_pct",
+    "group": "Metabolic",
+    "name": "HbA1c",
+    "value": 5.1,
+    "unit": "%",
+    "range": {
+     "type": "below",
+     "high": 6.0
+    },
+    "flag": null
+   },
+   {
+    "key": "uric_acid",
+    "group": "Metabolic",
+    "name": "Uric acid",
+    "value": 0.31,
+    "unit": "mmol/L",
+    "range": {
+     "type": "between",
+     "low": 0.2,
+     "high": 0.45
+    },
+    "flag": null
+   },
+   {
+    "key": "haemoglobin",
+    "group": "Blood count",
+    "name": "Haemoglobin",
+    "value": 151,
+    "unit": "g/L",
+    "range": {
+     "type": "between",
+     "low": 130,
+     "high": 180
+    },
+    "flag": null
+   },
+   {
+    "key": "haematocrit",
+    "group": "Blood count",
+    "name": "Haematocrit",
+    "value": 0.45,
+    "unit": "L/L",
+    "range": {
+     "type": "between",
+     "low": 0.4,
+     "high": 0.54
+    },
+    "flag": null
+   },
+   {
+    "key": "mcv",
+    "group": "Blood count",
+    "name": "MCV",
+    "value": 89,
+    "unit": "fL",
+    "range": {
+     "type": "between",
+     "low": 80,
+     "high": 100
+    },
+    "flag": null
+   },
+   {
+    "key": "rdw",
+    "group": "Blood count",
+    "name": "RDW",
+    "value": 12.8,
+    "unit": "%",
+    "range": {
+     "type": "between",
+     "low": 11.5,
+     "high": 14.5
+    },
+    "flag": null
+   },
+   {
+    "key": "wcc",
+    "group": "Blood count",
+    "name": "White cell count",
+    "value": 5.1,
+    "unit": "x10^9/L",
+    "range": {
+     "type": "between",
+     "low": 4.0,
+     "high": 11.0
+    },
+    "flag": null
+   },
+   {
+    "key": "neutrophils",
+    "group": "Blood count",
+    "name": "Neutrophils",
+    "value": 2.7,
+    "unit": "x10^9/L",
+    "range": {
+     "type": "between",
+     "low": 2.0,
+     "high": 7.5
+    },
+    "flag": null
+   },
+   {
+    "key": "lymphocytes",
+    "group": "Blood count",
+    "name": "Lymphocytes",
+    "value": 1.9,
+    "unit": "x10^9/L",
+    "range": {
+     "type": "between",
+     "low": 1.0,
+     "high": 4.0
+    },
+    "flag": null
+   },
+   {
+    "key": "platelets",
+    "group": "Blood count",
+    "name": "Platelets",
+    "value": 236,
+    "unit": "x10^9/L",
+    "range": {
+     "type": "between",
+     "low": 150,
+     "high": 400
+    },
+    "flag": null
+   }
+  ],
+  "lab_comments": [
+   "SAMPLE DATA. These results are fictional and exist only to demonstrate the dashboard.",
+   "Reference intervals shown are illustrative and vary between laboratories."
+  ],
+  "created_at": "2026-05-16T05:40:00+00:00"
+ }
+]

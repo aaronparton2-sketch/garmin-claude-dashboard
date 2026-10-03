@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #0a0c10;
+  color: #e6e9ef;
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+}
+
+/* recharts focus outlines off */
+.recharts-surface:focus { outline: none; }
+
+/* ---------------------------------------------------------------- print ---
+ * The request sheet is the only thing on this dashboard anyone would ever put
+ * on paper. `visibility` rather than `display:none` on the rest, because
+ * collapsing the app shell reflows the sheet mid-print and splits rows across
+ * pages. The sheet is then lifted to the top-left of the page box.
+ */
+@media print {
+  :root { color-scheme: light; }
+  body { background: #fff !important; color: #000 !important; }
+
+  body * { visibility: hidden !important; }
+  .print-sheet, .print-sheet * { visibility: visible !important; }
+
+  .print-sheet {
+    position: absolute !important;
+    left: 0; top: 0; width: 100%;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .no-print { display: none !important; }
+
+  /* keep a test and its "say this" line on the same page */
+  .break-inside-avoid { break-inside: avoid; page-break-inside: avoid; }
+
+  @page { margin: 14mm; }
+}
