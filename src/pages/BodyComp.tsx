@@ -295,7 +295,7 @@ function Header({ refreshed }: { refreshed?: string }) {
       <h1 className="font-display text-2xl font-semibold text-white">Body Composition</h1>
       <p className="mt-1 text-sm text-slate-500">
         DEXA as the reference standard, the Index scale as the daily proxy.
-        {refreshed ? ` Last refreshed ${refreshed}.` : ""}
+        {refreshed ? ` ${refreshed}.` : ""}
       </p>
     </header>
   );

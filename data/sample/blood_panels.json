@@ -662,14 +662,14 @@
     "key": "ck",
     "group": "Muscle",
     "name": "CK",
-    "value": 176,
+    "value": 268,
     "unit": "U/L",
     "range": {
      "type": "between",
      "low": 45,
      "high": 250
     },
-    "flag": null
+    "flag": "H"
    },
    {
     "key": "urea",

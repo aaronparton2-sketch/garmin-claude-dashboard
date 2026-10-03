@@ -245,12 +245,12 @@ def gen_weigh_ins(rng, start, end):
     while d <= end:
         f = fitness(d, start, end)
         recent = (end - d).days < 430
-        p = 0.72 if recent else 0.12
+        p = 0.45 if recent else 0.10
         if rng.random() < p:
-            weight = 78.4 - 4.1 * f + rng.gauss(0, 0.45) + (0.6 if d.weekday() == 0 else 0)  # Monday after the weekend
-            fat = 20.1 - 4.5 * f + rng.gauss(0, 0.5)
-            muscle = 34.3 + 0.8 * f + rng.gauss(0, 0.25)
-            water = 57.5 + 3.2 * f + rng.gauss(0, 0.6)
+            weight = 78.4 - 4.1 * f + rng.gauss(0, 0.3) + (0.4 if d.weekday() == 0 else 0)  # Monday after the weekend
+            fat = 20.1 - 4.5 * f + rng.gauss(0, 0.3)
+            muscle = 34.3 + 0.8 * f + rng.gauss(0, 0.18)
+            water = 57.5 + 3.2 * f + rng.gauss(0, 0.5)
             bone = 3.42 + 0.03 * f + rng.gauss(0, 0.04)
             rows.append({
                 "measured_at": iso(d - timedelta(days=1), 22, rng.randrange(0, 59)),  # ~6am local, stored UTC
@@ -407,13 +407,14 @@ def gen_bloods(end):
               ggt=19, bilirubin=12, albumin=44, tsh=1.9, cholesterol=4.6, triglycerides=0.9, hdl=1.5, ldl=2.7,
               chol_hdl_ratio=3.1, glucose=5.0, hba1c_pct=5.2, uric_acid=0.33, haemoglobin=146, haematocrit=0.43,
               mcv=88, rdw=13.1, wcc=5.4, neutrophils=2.9, lymphocytes=1.8, platelets=228)
+    # Second draw: ferritin recovered, CK still a touch over after a big week (the one flag left).
     v2 = dict(iron=19, transferrin=2.7, transferrin_sat=27, ferritin=58, folate=27, vitamin_d=84, b12=345,
-              crp=1, ck=176, urea=5.6, creatinine=86, egfr=90, sodium=141, potassium=4.4, chloride=104,
+              crp=1, ck=268, urea=5.6, creatinine=86, egfr=90, sodium=141, potassium=4.4, chloride=104,
               bicarbonate=27, magnesium=0.86, corrected_calcium=2.36, phosphate=1.08, ast=29, alt=24, alp=64,
               ggt=17, bilirubin=11, albumin=43, tsh=2.1, cholesterol=4.3, triglycerides=0.8, hdl=1.6, ldl=2.4,
               chol_hdl_ratio=2.7, glucose=4.9, hba1c_pct=5.1, uric_acid=0.31, haemoglobin=151, haematocrit=0.45,
               mcv=89, rdw=12.8, wcc=5.1, neutrophils=2.7, lymphocytes=1.9, platelets=236)
-    return [panel(p1, v1, {"ferritin": "L", "ck": "H"}), panel(p2, v2, {})]
+    return [panel(p1, v1, {"ferritin": "L", "ck": "H"}), panel(p2, v2, {"ck": "H"})]
 
 
 # ---------------------------------------------------------------- main
