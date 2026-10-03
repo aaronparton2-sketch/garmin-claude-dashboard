@@ -29,14 +29,21 @@ export const NAV_SECTIONS: { heading?: string; items: NavItem[] }[] = [
 
 /** Demo-only call to action. Rendered when source === "sample", so a copy you
  *  deploy on your own data carries no agency link by default. */
-export function WorkWithUs({ className = "" }: { className?: string }) {
+export function WorkWithUs({ className = "", compact = false }: { className?: string; compact?: boolean }) {
+  const box = `group block rounded-xl border border-emerald-500/25 bg-emerald-500/[0.07] transition hover:border-emerald-400/50 hover:bg-emerald-500/[0.12] ${className}`;
+  if (compact) {
+    // Sidebar version: one line, so the nav above it keeps its room on a laptop screen.
+    return (
+      <a href="https://myceliumai.com.au" target="_blank" rel="noopener noreferrer" className={`${box} px-3 py-2 text-[11px] leading-snug`}>
+        <span className="text-slate-400">Want one built for you?</span>{" "}
+        <span className="whitespace-nowrap font-semibold text-emerald-200">
+          Work with us <span className="inline-block transition group-hover:translate-x-0.5">→</span>
+        </span>
+      </a>
+    );
+  }
   return (
-    <a
-      href="https://myceliumai.com.au"
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`group block rounded-xl border border-emerald-500/25 bg-emerald-500/[0.07] px-3 py-2.5 transition hover:border-emerald-400/50 hover:bg-emerald-500/[0.12] ${className}`}
-    >
+    <a href="https://myceliumai.com.au" target="_blank" rel="noopener noreferrer" className={`${box} px-3 py-2.5`}>
       <div className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400/80">Want one built for you?</div>
       <div className="mt-0.5 text-[12px] font-medium text-emerald-200">
         Work with us <span className="inline-block transition group-hover:translate-x-0.5">→</span>
@@ -88,14 +95,7 @@ export default function Nav({ route, go, source }: { route: string; go: (p: stri
             <span className={`h-1.5 w-1.5 rounded-full ${source === "supabase" ? "bg-emerald-400" : source === "sample" ? "bg-amber-400" : "bg-slate-400"}`} />
             {source === "supabase" ? "live · supabase" : source === "sample" ? "sample data · demo" : "snapshot"}
           </span>
-          {source === "sample" && (
-            <>
-              <p className="mt-2 text-[10px] leading-snug text-slate-600">
-                Fictional athlete. Connect your own Garmin data via the README.
-              </p>
-              <WorkWithUs className="mt-3" />
-            </>
-          )}
+          {source === "sample" && <WorkWithUs compact className="mt-2.5" />}
         </div>
       </aside>
 
