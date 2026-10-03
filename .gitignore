@@ -10,3 +10,4 @@ tsconfig.tsbuildinfo
 # Your own Garmin data never goes in this repo. The ETL writes here; only
 # data/sample/ (generated, fictional) is tracked.
 data/*.json
+
